@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset='UTF-8' />
+    <!--RESPONSIVE DESGIGN-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Page 2</title>
-    <link rel='stylesheet' href='css/bootstrap.min.css' />
+    <link rel='stylesheet' href='css/bootstrap.min.css'>
 </head>
 
 <body>
@@ -332,17 +335,14 @@
                         <div class="alert alert-primary" role="alert">
                             A simple primary alert—check it out!
                         </div>
-                        <!--COMPONENT - BUTTON-->
-                        <div class="d-grid gap-2 d-md-block">
-                            <button class="btn btn-primary" type="button">Yup!</button>
-                            <button class="btn btn-primary" type="button">Nope!</button>
-                        </div>
+
                         <!--TOAST-->
                         <button type="button" class="btn btn-primary" id="liveToastBtn">Yup!</button>
                         <div class="toast-container position-fixed bottom-0 end-0 p-3">
                             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="toast-header">
-                                    <img src="..." class="rounded me-2" alt="...">
+                                    <img src="images/Flag_of_Saint_Kitts_and_Nevis.svg.png" class="rounded me-2"
+                                        width="10%" height="20%">
                                     <strong class="me-auto">St. Kitts</strong>
                                     <small>Just now</small>
                                     <button type="button" class="btn-close" data-bs-dismiss="toast"
@@ -379,4 +379,27 @@
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script>
+        const toastElList = document.querySelectorAll('.toast')
+        const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+    </script>
+    <script>
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+        if (toastTrigger) {
+            toastTrigger.addEventListener('click', () => {
+                const toast = new bootstrap.Toast(toastLiveExample)
+
+                toast.show()
+            })
+        }
+    </script>
 </body>
+
+</html>
