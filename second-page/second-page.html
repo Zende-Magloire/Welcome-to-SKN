@@ -333,11 +333,11 @@
                     <!--COMPONENTS - ALERTS-->
                     <div class="col align-self-start">
                         <div class="alert alert-primary" role="alert">
-                            A simple primary alert—check it out!
+                            St Kitts is only 18 miles long and 5 miles wide (at the widest part) the total size of the
+                            island is 67 square miles, Nevis is even smaller with a total size of 36 square miles.
                         </div>
-
-                        <!--TOAST-->
-                        <button type="button" class="btn btn-primary" id="liveToastBtn">Yup!</button>
+                        <!--COMPONENT - TOAST-->
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Click for a bonus!</button>
                         <div class="toast-container position-fixed bottom-0 end-0 p-3">
                             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="toast-header">
@@ -349,57 +349,82 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="toast-body">
-                                    Great!
-                                </div>
+                                    Each island only has one main road that runs the full perimeter so it’s almost
+                                    impossible to get lost. </div>
                             </div>
                         </div>
-                        <button type="button" class="btn btn-primary" id="liveToastBtn">Nope!</button>
+                    </div>
+                    <div class="col align-self-center">
+                        <div class="alert alert-primary" role="alert">
+                            The population of Saint Kitts and Nevis is around 53,000 divided between the two islands.
+                            Approximately 41,000 of the population live on St Kitts, and the remaining 12,000 live on
+                            Nevis.
+                        </div>
+                        <!--COMPONENT - TOAST-->
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Click for a bonus!</button>
                         <div class="toast-container position-fixed bottom-0 end-0 p-3">
                             <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
                                 <div class="toast-header">
-                                    <img src="..." class="rounded me-2" alt="...">
+                                    <img src="images/Flag_of_Saint_Kitts_and_Nevis.svg.png" class="rounded me-2"
+                                        width="10%" height="20%">
                                     <strong class="me-auto">St. Kitts</strong>
                                     <small>Just now</small>
                                     <button type="button" class="btn-close" data-bs-dismiss="toast"
                                         aria-label="Close"></button>
                                 </div>
                                 <div class="toast-body">
-                                    You learn something new every day!
+                                    It is rumoured that there are more monkeys on the islands than there are people!
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col align-self-center">
-                        One of three columns
-                    </div>
                     <div class="col align-self-end">
-                        One of three columns
+                        <div class="alert alert-primary" role="alert">
+                            St Kitts and Nevis are separated by a stretch of sea called the ‘narrows’ which is 2 miles
+                            long, a water taxi from the St Kitts to Nevis takes between 5-8 minutes.
+                        </div>
+                        <!--COMPONENT - TOAST-->
+                        <button type="button" class="btn btn-primary" id="liveToastBtn">Click for a bonus!</button>
+                        <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                                <div class="toast-header">
+                                    <img src="images/Flag_of_Saint_Kitts_and_Nevis.svg.png" class="rounded me-2"
+                                        width="10%" height="20%">
+                                    <strong class="me-auto">St. Kitts</strong>
+                                    <small>Just now</small>
+                                    <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="toast-body">
+                                    Each year there is a Channel Swim event held where people come from around the
+                                    world to partake in swimming the Narrows from Nevis to St Kitts. </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-        crossorigin="anonymous"></script>
-    <script>
-        const toastElList = document.querySelectorAll('.toast')
-        const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
-    </script>
-    <script>
-        const toastTrigger = document.getElementById('liveToastBtn')
-        const toastLiveExample = document.getElementById('liveToast')
-        if (toastTrigger) {
-            toastTrigger.addEventListener('click', () => {
-                const toast = new bootstrap.Toast(toastLiveExample)
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+            integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+            crossorigin="anonymous"></script>
+        <script>
+            const toastElList = document.querySelectorAll('.toast')
+            const toastList = [...toastElList].map(toastEl => new bootstrap.Toast(toastEl, option))
+        </script>
+        <script>
+            const toastTrigger = document.getElementById('liveToastBtn')
+            const toastLiveExample = document.getElementById('liveToast')
+            if (toastTrigger) {
+                toastTrigger.addEventListener('click', () => {
+                    const toast = new bootstrap.Toast(toastLiveExample)
 
-                toast.show()
-            })
-        }
-    </script>
+                    toast.show()
+                })
+            }
+        </script>
 </body>
 
 </html>
